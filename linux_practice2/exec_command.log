@@ -1,0 +1,179 @@
+    1  vagrant ssh-config
+    2  exit
+    3  sudo yum -y groupinstall "development tools"
+    4  php yum -y install epel-release wget
+    5  sudo yum -y install epel-release wget
+    6  sudo wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
+    7  sudo rpm -Uvh remi-release-7.rpm
+    8  sudo yum -y install --enablerepo=remi-php71 php php-pdo php-mysqlnd php-mbstring php-xml php-fpm php-common php-devel php-mysql unzip
+    9  php -v
+   10  php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+   11  php composer-setup.php
+   12  php -r "unlink('composer-setup.php');"
+   13  sudo mv composer.phar /usr/local/bin/composer
+   14  composer -v
+   15  ls /
+   16  ls /usr
+   17  ls -a /
+   18  ls -l /
+   19  pwd
+   20  cd /vagrant
+   21  pwd
+   22  cd ~
+   23  cd /
+   24  cd .
+   25  cd -
+   26  cd ..
+   27  cd ../../
+   28  cd /vagrant
+   29  cd usr
+   30  cd /usr
+   31  cd /vagrant
+   32  mkdir server_lesson && cd server_lesson
+   33  git init
+   34  touch first.txt
+   35  cd /vagrant
+   36  mkdir server_lesson/linux_practice/public
+   37  mkdir -p server_lesson/linux_practice/public
+   38  ls server_lesson server_lesson/linux_practice
+   39  cd /vagrant
+   40  touch server_lesson/linux_practice/public/index.php
+   41  ls server_lesson/linux_practice/public
+   42  cd /vagrant/server_lesson && ls
+   43  cd /vagrant/server_lesson/linux_practice/public
+   44  cp index.php index_bk.php
+   45  ls
+   46  cd /vagrant/server_lesson/linux_practice
+   47  ls
+   48  cp -r public tmp
+   49  ls ./ public tmp
+   50  ls ./
+   51  ls
+   52  cd ./
+   53  ls .
+   54  cd ../
+   55  cd ..
+   56  cd /vagrant/server_lesson/linux_practice
+   57  ls public tmp
+   58  ls . public tmp
+   59  cd /vagrant
+   60  mv server_lesson/linux_practice server_lesson/linux_practice1
+   61  mkdir linux_plactice2 linux_practice3
+   62  mv ./linux_practice2 ./server_lesson
+   63  mkdir linux_practice2
+   64  mv ./linux_practice2 ./server_lesson
+   65  rm linux_plactice2
+   66  ls
+   67  ls server_lesson
+   68  cd /vagrant/server_lesson/linux_practice1/tmp/
+   69  rm *_bk.php
+   70  ls
+   71  cd /vagrant
+   72  rm server_lesson/first.txt
+   73  rm -r linux_practice3
+   74  ls server_lesson
+   75  cd /vagrant/server_lesson
+   76  echo '# サーバレッスン' > README.md
+   77  echo 'Linuxプラクティス' >> README.md
+   78  echo '-----------------' >> README.md
+   79  cat README.md
+   80  vi README.md
+   81  git branch
+   82  ls
+   83  ls -a
+   84  git status
+   85  git add .
+   86  git status
+   87  git commit -m "server_lesson section6 課題1"
+   88  git status
+   89  git log
+   90  git remote add origin https://github.com/nakamurateigi/server_lesson.git
+   91  git remote -v
+   92  git push origin master
+   93  ls
+   94  cd linux_practice2
+   95  mkdir documents
+   96  ls
+   97  cd documents
+   98  touch gizumo{01..50}.md
+   99  ls
+  100  cd ./
+  101  cd ../
+  102  mkdir trash
+  103  ls
+  104  mv documents/gizumo{20..40}.md trash
+  105  ls trash
+  106  touch .gitignore
+  107  ls
+  108  ls -a
+  109  vi .gitignore
+  110  cat .gitignore
+  111  exit
+  112  ls
+  113  ls /
+  114  pwd
+  115  cd usr
+  116  cd /usr
+  117  cd /vagrant
+  118  ls
+  119  cd /server_lesson
+  120  cd server_lesson
+  121  ls
+  122  cat README.md
+  123  history -300
+  124  history
+  125  history 300
+  126  history 300 exec_command.log
+  127  ls -a
+  128  history -300
+  129  history 3
+  130  history 30
+  131  history 300 -w exec_command.log
+  132  history -w 300 exec_command.log
+  133  cat exec_command.log
+  134  ls
+  135  cat 300
+  136  rm 300
+  137  ls
+  138  ls -a
+  139  history 30
+  140  history -w exec_command.log
+  141  cat exec_command.log
+  142  rm exec_command.log
+  143  ls
+  144  history -300
+  145  history | tail -20
+  146  history | tail -20 -w exec_command.log
+  147  history -300 exec_command.log
+  148  history | tail -300 exec_command.log
+  149  touch exec_command.log
+  150  ls
+  151  history | tail -300 exec_command.log
+  152  cat exec_command.log
+  153  history -3
+  154  history -n
+  155  history
+  156  history -n 300
+  157  history
+  158  history -300
+  159  history -w exec_command.log
+  160  cat exec_command.log
+  161  history 300 > exec_command.log
+  162  cat exec_command.log
+  163  git status
+  164  git add .
+  165  git status
+  166  git commit -m "server_lesson section6 課題2"
+  167  git status
+  168  git log
+  169  git push origin master
+  170  cd linux_practice2
+  171  ls
+  172  cd ../
+  173  ls
+  174  mv exec_command.log linux_practice2/
+  175  ls
+  176  cd linux_practice2
+  177  ls
+  178  ls -a
+  179  history 300 > exec_command.log
